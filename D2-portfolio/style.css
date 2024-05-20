@@ -1,0 +1,135 @@
+body {
+    background-color: #7e5920;
+    font-family: "IBM Plex Sans", sans-serif;
+    /* Color pallet source: https://coolors.co/343330-45462a-7e5920-dc851f-ffa737 */
+}
+
+#intro {
+    color: white;
+    height: 100vh;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#intro h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+intro h3 {
+    animation-delay: 1s;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#intro code {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    animation-delay: 1s;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* mobile phone responsiveness */
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    intro code {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+code {
+    text-align: center;
+}
+#intro h3 {
+    margin-top: 20px;
+}
+
+#arrowDown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+}
+
+#about {
+    color: white;
+    background: #dc851f;
+    padding: 30px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#contact {
+    background: #ffa737;
+    color: white;
+    padding: 30px;
+
+    .row {
+        margin-bottom: 15px;
+    }
+
+    a {
+        color: white;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        /* Bootstrap v5.3 Buttons */
+    }
+}
+
+#portfolio {
+    padding: 30px;
+    background: #45462a;
+    color: white;
+}
+
+footer {
+    padding: 30px;
+    background: black;
+    color: white;
+}
+
+#about,
+#contact,
+#portfolio,
+footer {
+    box-shadow: -10px 0px 25px #343330;
+}
+
+/* !important; overriding BS CSS  */
+.bg-dark {
+    background-color: orange !important;
+}
+
+#project {
+    background-color: darkblue;
+    color: white;
+    padding: 30px;
+}
